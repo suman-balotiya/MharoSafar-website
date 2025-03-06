@@ -1,0 +1,274 @@
+body {
+    background-color:white;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: url(about2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Full viewport height */
+    position: relative;
+}
+.navbar {
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 70px;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar .menu a:hover {
+    color: rgb(227, 93, 26); 
+    text-decoration: underline;
+}
+
+
+h1 {
+    color: rgb(3, 54, 92);
+    text-transform: capitalize;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+    padding: 20px;    
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 80%;
+}
+.sec-head {
+    font-size: large;
+    color: darkslateblue;
+    margin:30px;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    /* position: absolute; */
+    float: left;
+    
+}
+.sec-head #para1{
+    background-color: rgb(210, 200, 200);
+    text-decoration: none;
+    color:darkslategray;
+}
+
+#why-choose {
+    font-size: large;
+    color: darkslateblue;
+    margin:30px 50px;
+    padding: 50px;
+    /* position: absolute; */
+    /* float: left; */
+    
+}
+#why-choose #para2{
+    padding-top: 5px;
+    padding-left: 200px;
+    padding-left: 30px;
+    padding-right: 150px;
+    text-decoration: none;
+    color:darkslategray;
+    border-radius: 10px;
+}
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa;
+    padding: 50px 100px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #007bff;
+}
+
+
+/* Contact Section */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-details p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.contact-details img {
+    width: 18px;
+    height: 18px;
+}
+/* 📌 For Tablets (Width 1024px and below) */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    h1 {
+        font-size: 32px;
+        width: 90%;
+    }
+
+    .sec-head,
+    #why-choose {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .services-container {
+        padding: 15px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* 📌 For Mobile Devices (Width 768px and below) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 26px;
+        padding: 10px;
+    }
+
+    .sec-head,
+    #why-choose {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-form {
+        padding-right: 0;
+    }
+
+    .contact-details {
+        padding-left: 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* 📌 For Small Mobile Screens (Width 480px and below) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar .menu a {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content {
+        padding: 20px;
+    }
+
+    .footer-column {
+        margin: 10px 0;
+    }
+}
+
+
+
+
